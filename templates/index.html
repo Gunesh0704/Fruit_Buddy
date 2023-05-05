@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Fruit Buddy - Home</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+  <!-- Favicons -->
+  <link href="{{url_for('static',filename = 'img/favicon.png')}}" rel="icon">
+  <link href="{{url_for('static',filename = 'img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+  <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{url_for('static',filename = 'vendor/aos/aos.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename = 'vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename = 'vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename = 'vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename = 'vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename = 'vendor/remixicon/remixicon.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename = 'vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{{url_for('static',filename = 'css/style.css')}}" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0"><a href="">Fruit Buddy<span></span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+
+    </div>
+  </header><!-- End Header -->
+
+  <section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+        <div class="col-xl-6 col-lg-8">
+          <h1>Get infomation about Fertilizers<span>.</span></h1>
+          <h2>We Provide all infomation about the Fertilizers and Pestisides</h2>
+        </div>
+      </div>
+      <center>
+
+      <form action="/predict" method="post" enctype="multipart/form-data" onsubmit="showloading()">
+        <input type="file" name="image" class="upload">
+        <input type="submit" class="btn btn-outline-primary" value="Predict"><br><br>
+        <br><br>
+        <br><br>
+    </form>
+    <center>
+        
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <img src="{{url_for('static',filename = 'img/about1.jpg')}}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+            <h3>Get the infomation about Fertilizers and Pesticides.</h3>
+            <p class="fst-italic">
+              Know which fertilizers you use on fruits and plants. Know the Disease of fruits.
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Increse your Productivity.</li>
+              <li><i class="ri-check-double-line"></i> Detect the Disease.</li>
+              <li><i class="ri-check-double-line"></i> Provide healthy fruit to people and make people healthy.</li>
+            </ul>
+            <p>
+              We are here to help Farmer to increse productivity of fruits and plants. Get the exact infomation of
+              Disease and there fertilizers and pesticides. Now you are the expert make your Fruits healthy.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+            <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+              <i class="bx bx-receipt"></i>
+              <h4>Disease</h4>
+              <p> Get the information of disease and the Symptomes.</p>
+            </div>
+            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+              <i class="bx bx-cube-alt"></i>
+              <h4>Fertilizers & Pesticides</h4>
+              <p>Get the information of fertilizers and Pesticides.</p>
+            </div>
+            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+              <i class="bx bx-images"></i>
+              <h4>Suggestions</h4>
+              <p>Get suggestions from experts.</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+    
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="text-center">
+          <h3>Back To Home</h3>
+          <p> We are friend of your fruit we make your fruits healthy and you make people healthy.</p>
+          <a class="cta-btn" href="#">Back</a>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+    
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Fruit Buddy<span>.</span></h3>
+              <p>
+                ACET Nagpur <br>
+                440001, India<br><br>
+
+                <strong>Email:</strong> fruitbuddy12@gmail.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Fruit Buddy</span></strong>. All Rights Reserved
+      </div>
+
+    </div>
+  </footer><!-- End Footer -->
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="{{url_for('static',filename = 'vendor/purecounter/purecounter_vanilla.js')}}"></script>
+  <script src="{{url_for('static',filename = 'vendor/aos/aos.js')}}"></script>
+  <script src="{{url_for('static',filename = 'vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{url_for('static',filename = 'vendor/glightbox/js/glightbox.min.js')}}"></script>
+  <script src="{{url_for('static',filename = 'vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+  <script src="{{url_for('static',filename = 'vendor/swiper/swiper-bundle.min.js')}}"></script>
+  <script src="{{url_for('static',filename = 'vendor/php-email-form/validate.js')}}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{{url_for('static',filename = 'js/main.js')}}"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Fruit Buddy</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+  <!-- Favicons -->
+  <link href="{{url_for('static',filename = 'img/favicon.png')}}" rel="icon">
+  <link href="{{url_for('static',filename = 'img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+  <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{url_for('static',filename = 'vendor/aos/aos.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename = 'vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename = 'vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename = 'vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename = 'vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename = 'vendor/remixicon/remixicon.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename = 'vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{{url_for('static',filename = 'css/style.css')}}" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0"><a href="">{{pred_output}}<span></span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+
+    </div>
+  </header><!-- End Header -->
+
+  <section class="d-flex align-items-center justify-content-center">
+    
+    <div class="container" data-aos="fade-up">
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <img src="{{url_for('static',filename = 'img/Disease/Cucumber_Bacterial_Wilt.jpg')}}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+            <h3>Information:</h3>
+            <p>
+              Cucumber bacterial wilt is caused by the bacterium, Erwinia tracheiphila, and is characterized initially by 
+              wilting and drying of individual leaves, especially those exhibiting cucumber beetle injury  </p>
+            <h3>Symptoms:</h3>
+            <ul>
+              <li>Leaves first appear dull green, wilt during the day and recover at night. </li>
+              <li> Bacterial wilt symptoms on leaf surface Wilting, stunting, yellowing of the foliage and finally collapse of the entire plant are the characteristic symptoms of the disease  </li>
+              </ul>
+            <h3>Treatment:</h3>
+            <ul>
+                <li>The beetles show up in early spring and lay their eggs on the undersides of the leaves. Keep an eye out for signs of the beetles, as soon as your cucumbers are planted.</li>
+                <li>You can protect early cucumber plantings by covering the plants with a floating row cover or cheesecloth.</li>
+                <li>Remove infected plant material from the area.</li>
+                </ul>
+            <h3>Fertilizer recommend:</h3>
+            <ul>
+              <li>Striped cucumber beetles are most active from dusk to dawn; spraying in the evening is most effective.</li>
+              <li>Use sprays containing pyrethrins since this a plant based deterrent and more organically sound</li>
+              <li>Adult beetles have a hard carapace, so you will have greater success if you spray these pests during their larval stage when they are still somewhat soft bodied.</li>
+               </ul>
+          </div>
+        </div>
+
+      </div>
+        
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="text-center">
+          <h3>Back To Home</h3>
+          <p> We are friend of your fruit we make your fruits healthy and you make people healthy.</p>
+          <a class="cta-btn" href="{{ url_for('back')}}">Back</a>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+    
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Fruit Buddy<span>.</span></h3>
+              <p>
+                ACET Nagpur <br>
+                440001, India<br><br>
+
+                <strong>Email:</strong> fruitbuddy12@gmail.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Fruit Buddy</span></strong>. All Rights Reserved
+      </div>
+
+    </div>
+  </footer><!-- End Footer -->
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="{{url_for('static',filename = 'vendor/purecounter/purecounter_vanilla.js')}}"></script>
+  <script src="{{url_for('static',filename = 'vendor/aos/aos.js')}}"></script>
+  <script src="{{url_for('static',filename = 'vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{url_for('static',filename = 'vendor/glightbox/js/glightbox.min.js')}}"></script>
+  <script src="{{url_for('static',filename = 'vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+  <script src="{{url_for('static',filename = 'vendor/swiper/swiper-bundle.min.js')}}"></script>
+  <script src="{{url_for('static',filename = 'vendor/php-email-form/validate.js')}}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{{url_for('static',filename = 'js/main.js')}}"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Fruit Buddy</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <!-- Favicons -->
+    <link href="{{ url_for('static', filename = 'img/favicon.png') }}" rel="icon" />
+    <link href="{{ url_for('static', filename = 'img/apple-touch-icon.png') }}" rel="apple-touch-icon" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet" />
+
+    <!-- Vendor CSS Files -->
+    <link href="{{ url_for('static', filename = 'vendor/aos/aos.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename = 'vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename = 'vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename = 'vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename = 'vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename = 'vendor/remixicon/remixicon.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename = 'vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="{{ url_for('static', filename = 'css/style.css') }}" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center justify-content-lg-between">
+        <h1 class="logo me-auto me-lg-0"><a href="">{{ pred_output }}<span></span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <section class="d-flex align-items-center justify-content-center">
+      <div class="container" data-aos="fade-up">
+        <br />
+        <br />
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <img src="{{ url_for('static', filename = 'img/Disease/Strawberry_Angular_Leafspot.jpg') }}" class="img-fluid" alt="" />
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+            <h3>Information:</h3>
+            <p>Angular leaf spot (ALS) is a bacterial disease caused by Xanthomonas fragariae, a pathogen highly specific to wild and cultivated strawberry, Fragaria x ananassa. ALS is an important disease on winter-produced strawberries worldwide and is considered a quarantine disease by the European Union.</p>
+            <h3>Symptoms:</h3>
+            <ul>
+              <li>The first spots usually develop on the lower leaf surface. Daylight can usually be seen through them. As the disease progresses, the spots turn reddish brown (1–4mm across) and are visible on both leaf surfaces.</li>
+              <li>They are small angular, water-soaked and translucent.</li>
+              <li>Lesions on the foliage begin as water-soaked spots that later turn gray or tan.</li>
+              <li>Spots may initially develop a yellow halo. As the affected tissue dries, the internal tissue may fall out, giving the leaf a tattered appearance. The lesions are delimited by veins, giving them an angular shape.</li>
+            </ul>
+            <h3>Treatment:</h3>
+            <ul>
+              <li>Provide frequent treatment of neem oil or another fungicide to the foliage.</li>
+              <li>Avoid getting water onto the leaves as it recovers. Keep the plant away from other plants temporarily.</li>
+              <li>Use copper-containing fungicides only prior to flowering.</li>
+              <li>Keep the plant away from other plants temporarily</li>
+              <li>Monitor daily to ensure the infection has stopped spreading.</li>
+            </ul>
+            <h3>Fertilizer recommend:</h3>
+            <ul>
+              <li>use on strawberries that Fertilizers contains captan, myclobutanil or copper as the active ingredient.</li>
+              <li>Copper-based fungicides are safe and effective for most plants, but always do your research copper can be harmful to certain plants.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+      <!-- ======= Cta Section ======= -->
+      <section id="cta" class="cta">
+        <div class="container" data-aos="zoom-in">
+          <div class="text-center">
+            <h3>Back To Home</h3>
+            <p>We are friend of your fruit we make your fruits healthy and you make people healthy.</p>
+            <a class="cta-btn" href="{{ url_for('back') }}">Back</a>
+          </div>
+        </div>
+      </section>
+      <!-- End Cta Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="footer-info">
+                <h3>Fruit Buddy<span>.</span></h3>
+                <p>
+                  ACET Nagpur <br />
+                  440001, India<br /><br />
+
+                  <strong>Email:</strong> fruitbuddy12@gmail.com<br />
+                </p>
+                <div class="social-links mt-3">
+                  <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                  <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                  <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                  <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                  <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Fruit Buddy</span></strong>. All Rights Reserved
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Vendor JS Files -->
+    <script src="{{ url_for('static', filename = 'vendor/purecounter/purecounter_vanilla.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'vendor/aos/aos.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'vendor/glightbox/js/glightbox.min.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'vendor/swiper/swiper-bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'vendor/php-email-form/validate.js') }}"></script>
+
+    <!-- Template Main JS File -->
+    <script src="{{ url_for('static', filename = 'js/main.js') }}"></script>
+  </body>
+</html>

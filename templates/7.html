@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Fruit Buddy</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+  <!-- Favicons -->
+  <link href="{{url_for('static',filename = 'img/favicon.png')}}" rel="icon">
+  <link href="{{url_for('static',filename = 'img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+  <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{url_for('static',filename = 'vendor/aos/aos.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename = 'vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename = 'vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename = 'vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename = 'vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename = 'vendor/remixicon/remixicon.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename = 'vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{{url_for('static',filename = 'css/style.css')}}" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0"><a href="">{{pred_output}}<span></span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+
+    </div>
+  </header><!-- End Header -->
+
+  <section class="d-flex align-items-center justify-content-center">
+    
+    <div class="container" data-aos="fade-up">
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <img src="{{url_for('static',filename = 'img/Disease/Banana_Anthracnose.jpg')}}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+            <h3>Information:</h3>
+            <p>
+                Anthracnose is caused by the fungus Colletotrichum musae, that survives in dead or decaying leaves and also on fruits. Its spores can be spread by wind, water and insects as well as by birds and rats feeding on bananas. They enter the fruit through small wounds in the peel and later germinate and initiate the expression of symptoms. Favorable environmental conditions for an infection are elevated temperatures, high humidity and frequent rainfalls. The symptoms may develop on ripening fruits on tree bunches or post-harvest during storage. It is the main disease affecting the quality of banana fruits during transportation and storage.
+            </p>
+            <h3>Symptoms:</h3>
+            <ul>
+              <li>The fungus causes dark-brown to black, sunken spots on the peel of infected fruits. </li>
+              <li>Initial symptoms are visible on green fruits, and are characterized by dark-brown to black lenticular, sunken lesions with pale margins on the peel. </li>
+              <li>On yellowing fruits, these lesions are of variable sizes and can coalesce to become sizable black sunken patches.</li>
+              <li>Orange to salmon pink colored fungal growth appear in their center. The symptoms can also start to appear on the tip of the fruit and result from a former floral infection.</li>
+            </ul>
+            <h3>Treatment:</h3>
+            <ul>
+                <li>Avoid damage to the banana tissue during harvest, packaging and storage.</li>
+                <li>Use plastic sleeves after bunch emergence to protect them from contamination.</li>
+                <li>Clean processing stations and storage facilities to prevent post-harvest contamination.</li>
+                <li>Wash fruits with water to rid the skin from fungal spores.</li>
+                <li>Contact your local Agricultural Extension office for other possible solutions in your area.</li>
+              </ul>
+            <h3>Fertilizer Recommend:</h3>
+            <ul>
+                <li> Treatments of fruits at harvest with biofungicides based on 10% Arabic gum together with 1.0% chitosan (a derivative of chitin) has been shown to partly control the disease during storage. </li>
+                <li>A variety of plant-based mixtures have been used with some success to avoid the growth of the pathogen, including citric extracts,  Zingiber officinale rhizome extracts as well as leaf extracts of Acacia albida, Polyalthia longifolia and Clerodendrum inerme. These promising data still need to be confirmed in field experiments. Immersion of green fruits in hot water at 55°C for 2 minutes also reduces the incidence.</li>
+                <li>During cultivation, banana bunches can be sprayed with products containing mancozeb (0.25 %) or benzimidazoles (0.05 %) and later covered to avoid any contamination. </li>
+                <li>Harvested fruits can be dipped or sprayed with fungicides containing benzimidazole. Coating of the fruits with the food-grade chemical butylated hydroxyanisole (BHA) might have the potential to enhance the activity of these fungicides.</li>
+              </ul>
+          </div>
+        </div>
+
+      </div>
+        
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="text-center">
+          <h3>Back To Home</h3>
+          <p> We are friend of your fruit we make your fruits healthy and you make people healthy.</p>
+          <a class="cta-btn" href="{{ url_for('back')}}">Back</a>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+    
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Fruit Buddy<span>.</span></h3>
+              <p>
+                ACET Nagpur <br>
+                440001, India<br><br>
+
+                <strong>Email:</strong> fruitbuddy12@gmail.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Fruit Buddy</span></strong>. All Rights Reserved
+      </div>
+
+    </div>
+  </footer><!-- End Footer -->
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="{{url_for('static',filename = 'vendor/purecounter/purecounter_vanilla.js')}}"></script>
+  <script src="{{url_for('static',filename = 'vendor/aos/aos.js')}}"></script>
+  <script src="{{url_for('static',filename = 'vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{url_for('static',filename = 'vendor/glightbox/js/glightbox.min.js')}}"></script>
+  <script src="{{url_for('static',filename = 'vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+  <script src="{{url_for('static',filename = 'vendor/swiper/swiper-bundle.min.js')}}"></script>
+  <script src="{{url_for('static',filename = 'vendor/php-email-form/validate.js')}}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{{url_for('static',filename = 'js/main.js')}}"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Fruit Buddy</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+  <!-- Favicons -->
+  <link href="{{url_for('static',filename = 'img/favicon.png')}}" rel="icon">
+  <link href="{{url_for('static',filename = 'img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+  <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{url_for('static',filename = 'vendor/aos/aos.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename = 'vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename = 'vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename = 'vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename = 'vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename = 'vendor/remixicon/remixicon.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename = 'vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{{url_for('static',filename = 'css/style.css')}}" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0"><a href="">{{pred_output}}<span></span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+
+    </div>
+  </header><!-- End Header -->
+
+  <section class="d-flex align-items-center justify-content-center">
+    
+    <div class="container" data-aos="fade-up">
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <img src="{{url_for('static',filename = 'img/Disease/Grape_Leaf_blight.jpg')}}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+            <h3>Information:</h3>
+            <p> Grape leaf blight is a fungal disease that affects grapevines, causing leaf spots and defoliation. The disease is caused by the fungus Guignardia bidwellii, which overwinters in infected leaves on the ground and produces spores that are spread by rain and wind in the spring. </p>
+            <h3>Symptoms:</h3>
+            <ul>
+              <li>The symptoms of grape leaf blight typically appear as circular or angular spots on the upper surface of the leaves. </li>
+              <li> These spots may be grayish-brown with purple margins and can range in size from a few millimeters to several centimeters in diameter.</li>
+              <li>  In some cases, the center of the spots may become tan or light brown and may have a scabby appearance. li>
+              <li>As the disease progresses, the spots may coalesce, leading to larger areas of necrosis and defoliation. Infected leaves may also curl, distort, or develop a yellow or red coloration.</li>
+              <li> In severe cases, the entire leaf may become brown and dry up, ultimately leading to reduced plant growth and yield.</li>
+          </ul>
+            <h3>Treatment:</h3>
+            <ul>
+                <li>Remove and destroy infected plant material: Infected leaves, shoots, and canes should be removed and destroyed to prevent the spread of the disease.</li>
+                <li>Cultural practices: Cultural practices such as pruning, canopy management, and improving air circulation can help reduce the humidity and create unfavorable conditions for fungal growth.</li>
+                <li>Fungicide applications: Fungicides can be applied to protect healthy foliage from infection. Several fungicides are available for controlling grape leaf blight, and the choice of fungicide will depend on the severity of the disease and the stage of plant growth.</li>
+                <li>Use resistant grape varieties: Some grape varieties are less susceptible to grape leaf blight, and planting these varieties can reduce the risk of infection.</li>
+              </ul>
+            <h3>Fertilizer recommend:</h3>
+            <ul>
+              <li>Fertilizers are used to provide essential nutrients to grapevines and promote healthy growth and development. Common fertilizer nutrients include nitrogen, phosphorus, and potassium, as well as micronutrients such as zinc, iron, and manganese. Fertilizers can be applied to the soil or directly to the foliage of the plant. </li>
+              <li>Pesticides are used to control pests and diseases that can damage grapevines and reduce yields. There are many different types of pesticides available for grape production, including insecticides, fungicides, and herbicides. It is important to select the appropriate pesticide for the pest or disease being targeted.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+        
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="text-center">
+          <h3>Back To Home</h3>
+          <p> We are friend of your fruit we make your fruits healthy and you make people healthy.</p>
+          <a class="cta-btn" href="{{ url_for('back')}}">Back</a>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+    
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Fruit Buddy<span>.</span></h3>
+              <p>
+                ACET Nagpur <br>
+                440001, India<br><br>
+
+                <strong>Email:</strong> fruitbuddy12@gmail.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Fruit Buddy</span></strong>. All Rights Reserved
+      </div>
+
+    </div>
+  </footer><!-- End Footer -->
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="{{url_for('static',filename = 'vendor/purecounter/purecounter_vanilla.js')}}"></script>
+  <script src="{{url_for('static',filename = 'vendor/aos/aos.js')}}"></script>
+  <script src="{{url_for('static',filename = 'vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{url_for('static',filename = 'vendor/glightbox/js/glightbox.min.js')}}"></script>
+  <script src="{{url_for('static',filename = 'vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+  <script src="{{url_for('static',filename = 'vendor/swiper/swiper-bundle.min.js')}}"></script>
+  <script src="{{url_for('static',filename = 'vendor/php-email-form/validate.js')}}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{{url_for('static',filename = 'js/main.js')}}"></script>
+
+
+</body>
+
+</html>
